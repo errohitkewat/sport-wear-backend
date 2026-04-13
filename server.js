@@ -6,6 +6,8 @@ const connectDB = require("./config/db");
 const authRoutes = require("./routes/authRoutes");
 const orderRoutes = require("./routes/orderRoutes");
 const productRoutes = require("./routes/productRoutes");
+const heroRoutes = require("./routes/heroRoutes");
+const categoryRoutes = require("./routes/categoryRoutes");
 
 dotenv.config();
 connectDB();
@@ -50,3 +52,5 @@ app.listen(PORT, () => {
 app.use("/api/auth", authRoutes);
 app.use("/api/orders", orderRoutes);
 app.use("/api/products", productRoutes);
+app.use("/api/hero", heroRoutes);
+app.use("/api/categories", categoryRoutes);
