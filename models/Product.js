@@ -33,7 +33,7 @@ const productSchema = new mongoose.Schema(
       type: String,
       default: "",
     },
-    isNew: {
+    isLatest: {
       type: Boolean,
       default: false,
     },
